@@ -16,7 +16,7 @@ export const Welcome = () => {
             transition={{ ease: "easeIn", duration: 1 }}
           >
             <h1>
-              Bonjour, je suis Gaël. Ce texte n'est pas censé être la<span>.</span>B
+              Bonjour, je suis Gaël.<span>.</span>B
             </h1>
           </motion.div>
           <motion.div
