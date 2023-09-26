@@ -16,7 +16,7 @@ export const Welcome = () => {
             transition={{ ease: "easeIn", duration: 1 }}
           >
             <h1>
-              Bonjour, je suis Gaël. test d'un merge<span>.</span>B
+              Bonjour, je suis Gaël. je suis la branche dev<span>.</span>B
             </h1>
           </motion.div>
           <motion.div
