@@ -23,18 +23,18 @@ export default function TemporaryDrawer() {
 
   const onglets = [
     { name: "Accueuil", 
-      emoji: "portfolio/squared-up-with-exclamation-mark_1f199.png" 
+      emoji: "squared-up-with-exclamation-mark_1f199.png" 
     },
     {
       name: "À Propos",
-      emoji: "portfolio/man-raising-hand-type-1-2_1f64b-1f3fb-200d-2642-fe0f.png",
+      emoji: "man-raising-hand-type-1-2_1f64b-1f3fb-200d-2642-fe0f.png",
     },
     { name: "Mes projets", 
-      emoji: "portfolio/personal-computer_1f4bb.png" 
+      emoji: "personal-computer_1f4bb.png" 
     },
     {
       name: "Me Contacter",
-      emoji: "portfolio/black-nib_2712.png",
+      emoji: "black-nib_2712.png",
     },
   ];
 
