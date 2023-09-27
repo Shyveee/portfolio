@@ -34,7 +34,7 @@ export default function TemporaryDrawer() {
     },
     {
       name: "Me Contacter",
-      emoji: "./portfolio/black-nib_2712.png",
+      emoji: "https://github.com/Shyveee/portfolio/blob/main/public/black-nib-removebg-preview(1).png?raw=true",
     },
   ];
 
