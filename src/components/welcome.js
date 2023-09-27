@@ -9,24 +9,24 @@ export const Welcome = () => {
         whileTap={{ scale: 0.95 }}
         style={{ x: 0 }}
       >
-        <div className="texteWelcome">
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ ease: "easeIn", duration: 1 }}
-          >
-            <h1>
-              Bonjour, je suis Gaël. je suis la branche dev<span>.</span>B
-            </h1>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ ease: "easeIn", duration: 2 }}
-          >
-            <h2>Développeur Front-End</h2>
-          </motion.div>
-          
+        <div className="content">
+          <img
+            src="/dfbe7d64e9cbf7796cead59582156959-sticker.png"
+            alt="Memoji"
+          />
+          <div className="texteWelcome">
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ ease: "easeIn", duration: 1 }}
+            >
+              <h1>
+                Mon portfolio est <br />
+                en cours de création...
+              </h1>
+              <h2>Revenez dans quelques semaines !</h2>
+            </motion.div>
+          </div>
         </div>
       </motion.a>
     </div>
