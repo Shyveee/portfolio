@@ -23,14 +23,14 @@ export default function TemporaryDrawer() {
 
   const onglets = [
     { name: "Accueuil", 
-      emoji: "./portfolio/squared-up-with-exclamation-mark_1f199.png" 
+      emoji: "https://github.com/Shyveee/portfolio/blob/main/public/squared-up-with-exclamation-mark_1f199.png?raw=true"
     },
     {
       name: "À Propos",
-      emoji: "./portfolio/man-raising-hand-type-1-2_1f64b-1f3fb-200d-2642-fe0f.png",
+      emoji: "https://github.com/Shyveee/portfolio/blob/main/public/man-raising-hand-type-1-2_1f64b-1f3fb-200d-2642-fe0f.png?raw=true",
     },
     { name: "Mes projets", 
-      emoji: "./portfolio/personal-computer_1f4bb.png" 
+      emoji: "https://github.com/Shyveee/portfolio/blob/main/public/personal-computer_1f4bb.png?raw=true" 
     },
     {
       name: "Me Contacter",

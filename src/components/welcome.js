@@ -11,7 +11,7 @@ export const Welcome = () => {
       >
         <div className="content">
           <img
-            src={"./portfolio/dfbe7d64e9cbf7796cead59582156959-sticker.png"}
+            src={"https://github.com/Shyveee/portfolio/blob/main/public/dfbe7d64e9cbf7796cead59582156959-sticker.png?raw=true"}
             alt="Memoji"
           />
           <div className="texteWelcome">
