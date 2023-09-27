@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import emoji from "../../public/dfbe7d64e9cbf7796cead59582156959-sticker.png"
 
 export const Welcome = () => {
   return (
@@ -11,7 +12,7 @@ export const Welcome = () => {
       >
         <div className="content">
           <img
-            src="C:\Users\gaelb\Desktop\Bureau\Code\REACT\portfolio_github\portfolio\public\dfbe7d64e9cbf7796cead59582156959-sticker.png"
+            src={emoji}
             alt="Memoji"
           />
           <div className="texteWelcome">
