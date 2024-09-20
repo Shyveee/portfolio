@@ -1,34 +1,54 @@
 import React from "react";
-import { motion } from "framer-motion";
+import {motion} from "framer-motion";
+import {SocialsButtons} from "./socials-button/socials-buttons.js";
+import {ScrollArrow} from "./scroll-arrow/scroll-arrow";
 
-export const Welcome = () => {
-  return (
-    <div className="Welcome">
-      <motion.a
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
-        style={{ x: 0 }}
-      >
-        <div className="content">
-          <img
-            src={"https://github.com/Shyveee/portfolio/blob/main/public/dfbe7d64e9cbf7796cead59582156959-sticker.png?raw=true"}
-            alt="Memoji"
-          />
-          <div className="texteWelcome">
+export const Welcome = ({scrollToAbout }) => {
+    return (
+        <div className="Welcome">
             <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ ease: "easeIn", duration: 1 }}
-            >
-              <h1>
-                Mon portfolio est <br />
-                en cours de création...
-              </h1>
-              <h2>Revenez dans quelques semaines !</h2>
+                initial={{opacity: 0, scale: 0.5}}
+                animate={{opacity: 1, scale: 1}}
+                transition={{
+                    duration: 1,
+                    ease: [0, 0.33, 0.66, 1.01],
+                    scale: {
+                        type: "spring",
+                        damping: 20,
+                        stiffness: 100,
+                        restDelta: 0.001
+                    }
+                }}>
+                <div className="welcome-content">
+                    <div className="welcome-upper">
+                        <img className="personal-pic" src="/pfp.png" alt="me"/>
+                        <div className="texte-welcome">
+                            <motion.div
+                                initial={{opacity: 0}}
+                                animate={{opacity: 1}}
+                                transition={{ease: "easeIn", duration: 1}}>
+                                <h1>Bonjour, je suis Gaël<span>.</span>B</h1>
+                                <div className="sous-titre">
+                                    <p>Etudiant ingénieur en cybersécurité&nbsp;</p>
+                                    <img src="/laptop.png" alt="computer"/>
+                                </div>
+                                <SocialsButtons/>
+                            </motion.div>
+                        </div>
+                    </div>
+                    <hr/>
+                    <p>Passionné par l'informatique et ses applications depuis plusieurs années, je
+                        cherche<br/> constamment à approfondir mes
+                        connaissances. <br/> L'objectif de ce site est de répertorier mon parcours et mes projets.</p>
+                </div>
             </motion.div>
-          </div>
+
+            <motion.div
+                initial={{opacity: 0}}
+                animate={{opacity: 1}}
+                transition={{ease: "easeIn", duration: 1}}>
+                <ScrollArrow onClick={scrollToAbout} />
+            </motion.div>
         </div>
-      </motion.a>
-    </div>
-  );
+    )
 };
